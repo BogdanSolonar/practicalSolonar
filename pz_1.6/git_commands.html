@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git commands</title>
+</head>
+<body>
+  <header >
+  <div class="indexHeader">
+      <div >
+        <h1 class="titleMain">Мій особистий блог</h1>
+        <h1 class="titleMain2">Solonar Bogdan</h1>
+      </div>
+      <div class="enter">
+        <a class="enterLink" href="register.html">Вхід</a>
+        <a class="enterLink" href="">Реєстрація</a></div>
+      </div>
+  </div>
+  </header>
+  <section class="indexSection">
+    <div class="mainDivOfCommands">
+        <div class="secondDivOfCommands">
+            <h2 id="Create">Create a Repository</h2>
+            <p class="TextOfDescription">From scrath -- create a ne local repository</p>
+            <p class="TextOfCommand">$ git init [project name]</p>
+            <p class="TextOfDescription">Download from an existring repository</p>
+            <p class="TextOfCommand">$ git clone my_url</p>
+            <h2 id="Observe">Observe your Repository</h2>
+            <p class="TextOfDescription">list new or modified files not yet committed</p>
+            <p class="TextOfCommand">$ git status</p>
+            <p class="TextOfDescription">Show the changes to files not yet staged</p>
+            <p class="TextOfCommand">$ git diff</p>
+            <p class="TextOfDescription">show the changes to staged files</p>
+            <p class="TextOfCommand">$ git diff --cached</p>
+            <p class="TextOfDescription">Show all staged and unstaged file changes</p>
+            <p class="TextOfCommand">$ git diff HEAD</p>
+            <p class="TextOfDescription">show the changes between two commit ids</p>
+            <p class="TextOfCommand">$ git diff commitl commit2</p>
+            <p class="TextOfDescription">List the change dates and authors for a file</p>
+            <p class="TextOfCommand">$ git blame[file]</p>
+            <p class="TextOfDescription">Show the file changes for a commit id and/or file</p>
+            <p class="TextOfCommand">$ git show [commit] : [file]</p>
+            <p class="TextOfDescription">Show full change history</p>
+            <p class="TextOfCommand">$ git log</p>
+            <p class="TextOfDescription">Show change history for file/directory including diffs</p>
+            <p class="TextOfCommand">$ git log -p [file.directory]</p>
+        </div>
+        <div class="secondDivOfCommands">
+            <h2 id="Working">Working with Branches</h2>
+            <p class="TextOfDescription">List all local Branches</p>
+            <p class="TextOfCommand">$ git branch</p>
+            <p class="TextOfDescription">list all branchers, local and remote</p>
+            <p class="TextOfCommand">$ git branch -av</p>
+            <p class="TextOfDescription">Switch to a branch, my_branch, and update working directory</p>
+            <p class="TextOfCommand">$ git checkout my_branch</p>
+            <p class="TextOfDescription">Create a new branch called new_branch</p>
+            <p class="TextOfCommand">$ git branch new_branch</p>
+            <p class="TextOfDescription">Delete the branch called my_branch</p>
+            <p class="TextOfCommand">$ git branch -d my_branch <br>$ git merge branch_a</p>
+            <p class="TextOfDescription">Tag hte current commit</p>
+            <p class="TextOfCommand">$ git tag my_tag</p>
+        </div>
+        <div class="secondDivOfCommands">
+            <h2 id="MakeAChange">Make a change</h2>
+            <p class="TextOfDescription">Stages the file, ready for commit</p>
+            <p class="TextOfCommand">$ git add [file]</p>
+            <p class="TextOfDescription">Stage all changed files, ready for commit</p>
+            <p class="TextOfCommand">$ git add</p>
+            <p class="TextOfDescription">Commit all staged files to versioned history</p>
+            <p class="TextOfCommand">$ git commit -n "commit message"</p>
+            <p class="TextOfDescription">Commit all your trached files to versioned history</p>
+            <p class="TextOfCommand">$ git commit -an "commit message"</p>
+            <p class="TextOfDescription">Unstages file, keeping the file changes</p>
+            <p class="TextOfCommand">$ git reset [file]</p>
+            <p class="TextOfDescription">Revert everything to the last commit</p>
+            <p class="TextOfCommand">$ git reset --hard</p>
+        </div>
+        <div class="secondDivOfCommands">
+            <h2 id="Synchronize">Synchronize</h2>
+            <p class="TextOfDescription">Get the latest changes from origin (no merge)</p>
+            <p class="TextOfCommand">$ git fetch</p>
+            <p class="TextOfDescription">Fetch the latest changes from origin and merge</p>
+            <p class="TextOfCommand">$ git pull</p>
+            <p class="TextOfDescription">Fetch the latest changes from origin and rebase</p>
+            <p class="TextOfCommand">$ git pull --rebase</p>
+            <p class="TextOfDescription">Push local changes to the origin</p>
+            <p class="TextOfCommand">$ git push</p>
+            <h2 id="Finally">Finally!</h2>
+            <p class="TextOfDescription">When in doubt, use git help</p>
+            <p class="TextOfCommand">$ git command --help</p>
+        </div>
+    </div>
+    
+  </section>
+  <footer >
+      <div  class="indexFooter">
+        <p class="noteFooter">@ Всі права захищені. <br> Курсант: 291 навчальної групи Солонар Б.В</p>
+      </div>
+  </footer>
+</body>
+</html>

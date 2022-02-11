@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+*,*:before,:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+    
+}
+:focus,active{outline:none}
+a:focus,a:active{outline:none};
+
+nav,footer,header,aside{display:block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust:100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding: 0 border 0;}
+a,a:visited{text-decoration:none}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
+
+.indexHeader{
+    padding-left: 10px;
+ height: 60px;
+ background-color: rgb(30, 101, 255);
+ border-bottom: 3px solid rgb(233, 3, 3);
+ display:flex;
+ justify-content: space-between;
+ 
+}
+.titleMain{
+    font-size:25px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.titleMain2{
+    font-size:18px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.noteFooter{
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+
+}
+.enter{
+ padding: 10px;
+}
+/* .enterLink{
+  font-size:large ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #000;
+  margin: 0px 10px 
+
+} */
+.imgCover{
+    height: 170px;
+    float: left;
+    padding: 12px;
+}
+.indexFooter{
+ height:84px;
+ background-color: rgb(53, 53, 53);
+ margin-bottom: 0;
+}
+
+.indexSection{
+    height: 80%;
+}
+
+.textOfdetail{
+    padding: 20px 0px 0px 20px;
+}
+
+.linkFortheDetails{
+    margin-right: 0px;
+}
+.formsLogin{
+    height: 480px;
+    width: 350px;
+    margin: 2% auto;
+    border-radius: 20px;
+   box-shadow: 0 0 15px #000; 
+   border: 1px solid #000;
+   position: relative;
+
+}
+#divFormLogin{
+    padding: 5%;
+}
+.formsTop{
+    border-radius: 30px;
+    height: 8%;
+    width: 100%;
+    background-color: blue;
+}
+.textTopOfFOrms{
+    text-align: center;
+    padding: 4%;
+    font-weight: 700;
+    color: aliceblue
+    ;
+}
+.divOfInput{
+    margin: 50px 0px 0px 10px;
+   
+}
+
+
+.textField{
+    border: 1px solid rgb(146, 146, 146);
+   margin: 10px 0px 10px 0px;
+   width: 300px;
+   height: 25px;
+   box-shadow: 0px 0px 3px;
+   border-radius: 5px;
+   
+}
+.button {
+  margin-left:200px ;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: #1a4053;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 1s ease; 
+  }
+  
+  .button:hover {
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+  }
+  .enterLink{
+  position: relative;
+  font-size:30px ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #000;
+  margin: 0px 10px 
+  
+}
+.enterLink:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.enterLink:hover:after {
+  width: 100%;
+}
+
+.enterLink {
+  transition: all 2s;
+}
+.enterLink:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+ .enterLink:hover {
+  color: #fff;
+  z-index: 1;
+}
+ .enterLink:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+.textOfRegister{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:normal;
+  font-size: medium;
+}
+#NumberGroup{
+  font-size: 18px;
+}
+.mainDivOfCommands{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  padding: 0px 10px 10px 85px;
+}
+.secondDivOfCommands{
+  height: 100%;
+  width: 25%;
+}
+.TextOfDescription{
+ max-width: 240px;
+}
+.TextOfCommand{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin: 1px 0px 15px 0px;
+}
+h2{
+  font-size: 21px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  margin: 10px 0px 5px 0px ;
+}
+#Create{
+  color: #1c9fe0;
+}
+#Observe{
+  color: rgb(5, 105, 145);
+}
+#Working{
+ color: rgb(91, 182, 0);
+}
+#Synchronize{
+color: coral;
+}
+#Finally{
+color: rgb(170, 130, 0);
+}
+#MakeAChange{
+color: rgb(69, 128, 11);
+}
